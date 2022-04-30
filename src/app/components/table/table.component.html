@@ -1,0 +1,20 @@
+<table>
+  <thead>
+    <tr>
+      <th>First name</th>
+      <th>Last name</th>
+      <th>Age</th>
+      <th>City</th>
+      <th>Phone</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of oldestUsersDetails">
+      <td>{{ user.name.first }}</td>
+      <td>{{ user.name.last }}</td>
+      <td>{{ user.dob.age }}</td>
+      <td>{{ user.location.city }}</td>
+      <td>{{ user.phone }}</td>
+    </tr>
+  </tbody>
+</table>

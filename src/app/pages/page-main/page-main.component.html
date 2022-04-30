@@ -1,0 +1,70 @@
+<div class="main-container">
+  <section>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat
+      nisi eu velit imperdiet, in imperdiet urna dictum. Maecenas et massa at
+      orci blandit facilisis. Etiam urna justo, interdum lacinia urna vel,
+      convallis condimentum diam. Ut tincidunt sit amet neque id vestibulum.
+      Etiam sit amet vulputate nulla. Nunc congue sit amet mauris ac finibus.
+      Sed ornare varius ligula quis suscipit. Nam commodo lorem vel tortor
+      lacinia tempor. Suspendisse commodo ipsum ac condimentum iaculis.
+      Vestibulum finibus, odio quis porta sollicitudin, libero nisl malesuada
+      ex, at dictum lacus est non tellus. Duis eu nibh quis nisl convallis
+      blandit a nec orci.
+    </p>
+    <p>
+      Suspendisse aliquet diam in neque hendrerit, quis porta elit venenatis.
+      Curabitur at vestibulum turpis. Nulla facilisi. Sed tristique dolor ac
+      convallis sollicitudin. Integer eget magna non diam aliquet ultrices.
+      Phasellus egestas, urna vel elementum dictum, sem nibh blandit odio, in
+      auctor est velit ut ante. Suspendisse potenti. Pellentesque ante lorem,
+      finibus sed ultrices in, condimentum ac arcu. Mauris id augue lobortis,
+      euismod leo a, elementum nunc.
+    </p>
+  </section>
+  <section class="placeholder">
+    <app-chart
+      *ngIf="usersDetails.length > 0"
+      [usersDetails]="usersDetails"
+    ></app-chart>
+    <app-table
+      *ngIf="oldestUsersDetails.length > 0"
+      [oldestUsersDetails]="oldestUsersDetails"
+    ></app-table>
+    <app-loader *ngIf="loader$ | async"></app-loader>
+  </section>
+  <button class="btn" (click)="loadData()">Load data</button>
+  <section #backgroundSection>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat
+      nisi eu velit imperdiet, in imperdiet urna dictum. Maecenas et massa at
+      orci blandit facilisis. Etiam urna justo, interdum lacinia urna vel,
+      convallis condimentum diam. Ut tincidunt sit amet neque id vestibulum.
+      Etiam sit amet vulputate nulla. Nunc congue sit amet mauris ac finibus.
+      Sed ornare varius ligula quis suscipit. Nam commodo lorem vel tortor
+      lacinia tempor. Suspendisse commodo ipsum ac condimentum iaculis.
+      Vestibulum finibus, odio quis porta sollicitudin, libero nisl malesuada
+      ex, at dictum lacus est non tellus. Duis eu nibh quis nisl convallis
+      blandit a nec orci.
+    </p>
+    <p>
+      Suspendisse aliquet diam in neque hendrerit, quis porta elit venenatis.
+      Curabitur at vestibulum turpis. Nulla facilisi. Sed tristique dolor ac
+      convallis sollicitudin. Integer eget magna non diam aliquet ultrices.
+      Phasellus egestas, urna vel elementum dictum, sem nibh blandit odio, in
+      auctor est velit ut ante. Suspendisse potenti. Pellentesque ante lorem,
+      finibus sed ultrices in, condimentum ac arcu. Mauris id augue lobortis,
+      euismod leo a, elementum nunc.
+    </p>
+
+    <p>
+      Suspendisse aliquet diam in neque hendrerit, quis porta elit venenatis.
+      Curabitur at vestibulum turpis. Nulla facilisi. Sed tristique dolor ac
+      convallis sollicitudin. Integer eget magna non diam aliquet ultrices.
+      Phasellus egestas, urna vel elementum dictum, sem nibh blandit odio, in
+      auctor est velit ut ante. Suspendisse potenti. Pellentesque ante lorem,
+      finibus sed ultrices in, condimentum ac arcu. Mauris id augue lobortis,
+      euismod leo a, elementum nunc.
+    </p>
+  </section>
+</div>
